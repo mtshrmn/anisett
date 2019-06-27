@@ -1,0 +1,59 @@
+{
+	"name": "Anisett",
+	"version": "0.0.1",
+	"description": "watching anime with ease",
+	"main": "src/electron.js",
+	"scripts": {
+		"react-start": "parcel -p 3000 index.html --out-dir build",
+		"react-build": "parcel build index.html --out-dir build --public-url ./",
+		"electron-build": "electron-builder",
+		"clean-build": "rm -rf build/ .cache dist/",
+		"build": "yarn clean-build && yarn react-build && yarn electron-build",
+		"start": "concurrently \"cross-env BROWSER=none yarn react-start\" \"wait-on http://localhost:3000 && electron . \"",
+		"lint": "eslint --fix src/**/*.js"
+	},
+	"keywords": [
+		"anime"
+	],
+	"author": "Jelomite <moshesher1998@gmail.com>",
+	"license": "MIT",
+	"dependencies": {
+		"electron-is-dev": "1.1.0",
+		"react": "16.8.6",
+		"react-dom": "16.8.6"
+	},
+	"build": {
+		"appId": "com.anisett",
+		"files": [
+			"src/electron.js",
+			"src/assets/*",
+			"build/**/*"
+		],
+		"mac": {
+			"target": "dmg"
+		},
+		"win": {
+			"target": "nsis"
+		},
+		"linux": {
+			"target": "deb"
+		}
+	},
+	"homepage": "./",
+	"devDependencies": {
+		"babel-core": "6.26.3",
+		"babel-eslint": "^10.0.2",
+		"babel-plugin-transform-object-rest-spread": "6.26.0",
+		"babel-plugin-transform-react-jsx": "6.24.1",
+		"babel-preset-env": "1.7.0",
+		"babel-preset-react": "6.24.1",
+		"concurrently": "4.1.1",
+		"cross-env": "5.2.0",
+		"electron": "5.0.6",
+		"electron-builder": "20.44.4",
+		"eslint": "^6.0.1",
+		"eslint-plugin-react": "^7.14.2",
+		"parcel-bundler": "1.12.3",
+		"wait-on": "3.2.0"
+	}
+}
