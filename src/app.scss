@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass&display=swap');
+
+// palette:
+$bg: #121126;
+$fg: #ccc;
+
+body {
+  background-color: $bg;
+  margin: 0;
+  font-family: 'Overpass', sans-serif;
+  color: $fg;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 100px;
+}

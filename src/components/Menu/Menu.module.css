@@ -1,0 +1,28 @@
+.container {
+	position: fixed;
+	top: 0;
+	height: 100%;
+	width: 100px;
+	background-color: #0e0e1b;
+	z-index: 3;
+}
+
+.button {
+	width: 100px;
+	height: 100px;
+	cursor: pointer;
+	text-align: center;
+	line-height: 145px;
+	color: #948fff;
+	fill: #948fff;
+}
+
+.active {
+	background-color: #1f1c3b;
+	color: #fff;
+	fill: #fff;
+}
+
+svg {
+	height: 50%;
+}
