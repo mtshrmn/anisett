@@ -11,17 +11,25 @@ export const Menu = () => {
 	const {active, setActive} = useNavigation();
 	return (
 		<div className={style.container}>
-			<div className={`${style.button} ${active === 0 ? style.active : ""}`} onClick={() => setActive(0)}>
-				<Home />
+			<div className={`${style.button} ${active === 0 ? style.active : ""}`}>
+				<div className={style.pointer} onClick={() => setActive(0)}>
+					<Home />
+				</div>
 			</div>
-			<div className={`${style.button} ${active === 1 ? style.active : ""}`} onClick={() => setActive(1)}>
-				<List />
+			<div className={`${style.button} ${active === 1 ? style.active : ""}`}>
+				<div className={style.pointer} onClick={() => setActive(1)}>
+					<List />
+				</div>
 			</div>
-			<div className={`${style.button} ${active === 2 ? style.active : ""}`} onClick={() => setActive(2)}>
-				<Downloads />
+			<div className={`${style.button} ${active === 2 ? style.active : ""}`}>
+				<div className={style.pointer} onClick={() => setActive(2)}>
+					<Downloads />
+				</div>
 			</div>
-			<div className={`${style.button} ${active === 3 ? style.active : ""}`} onClick={() => setActive(3)}>
-				<Play />
+			<div className={`${style.button} ${active === 3 ? style.active : ""}`}>
+				<div className={style.pointer} onClick={() => setActive(3)}>
+					<Play />
+				</div>
 			</div>
 		</div>
 	);

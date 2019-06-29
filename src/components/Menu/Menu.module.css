@@ -8,13 +8,21 @@
 }
 
 .button {
-	width: 70px;
-	height: 70px;
-	cursor: pointer;
+	width: 49px;
+	height: 49px;
 	text-align: center;
-	line-height: 97px;
+	padding: 15%;
+}
+
+.pointer {
+	/* margin: 15%; */
+	height: 100%;
+	cursor: pointer;
 	color: #948fff;
 	fill: #948fff;
+	background-color: inherit;
+
+
 }
 
 .active {
@@ -24,5 +32,6 @@
 }
 
 svg {
-	height: 50%;
+	height: 100%;
+	width: 100%;
 }
