@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Overpass&display=swap');
-
+@fontface {
+  font-family: 'Overpass';
+  src: url('./assets/Overpass-Regular.ttf');
+}
 // palette:
 $bg: #121126;
 $fg: #ccc;
