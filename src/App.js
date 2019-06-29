@@ -1,20 +1,10 @@
 import React from "react";
 import style from "./app.scss";
-import ShowCard from "./components/ShowCard/ShowCard";
-import Menu from "./components/Menu/Menu";
-import Home from "./assets/Home.svg";
-import List from "./assets/List.svg";
-import Downloads from "./assets/Downloads.svg";
-import Play from "./assets/Play.svg";
+import {Menu, ShowCard} from "./components";
 
 const App = () => (
 	<div>
-		<Menu pages={[
-			<Home key={0}/>,
-			<List key={1}/>,
-			<Play key={2}/>,
-			<Downloads key={3}/>,
-		]} />
+		<Menu />
 		<div className={style.container}>
 			<ShowCard
 				title="Dr. STONE"

@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import style from "./ShowCard.module.css";
 
-const ShowCard = ({image, title, progress}) => (
+export const ShowCard = ({image, title, progress}) => (
 	<div className={style.card}>
 		<img className={style.img} src={image} alt={title}/>
 		<div className={style.content}>
@@ -17,5 +17,3 @@ ShowCard.propTypes = {
 	title: PropTypes.string,
 	progress: PropTypes.number,
 };
-
-export default ShowCard;

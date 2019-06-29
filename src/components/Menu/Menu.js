@@ -1,27 +1,28 @@
-import React, {useState} from "react";
-import PropTypes from "prop-types";
+import React from "react";
 import style from "./Menu.module.css";
+import useNavigation from "../../stores/navigation";
 
-const Menu = props => {
-	const [active, setActive] = useState(0);
+import Home from "./icons/Home.svg";
+import List from "./icons/List.svg";
+import Downloads from "./icons/Downloads.svg";
+import Play from "./icons/Play.svg";
+
+export const Menu = () => {
+	const {active, setActive} = useNavigation();
 	return (
 		<div className={style.container}>
-			{
-				props.pages.map((icon, index) => (
-					<div
-						key={icon}
-						className={`${style.button} ${index === active ? style.active : ""}`}
-						onClick={() => setActive(index)}>
-						{icon}
-					</div>
-				))
-			}
+			<div className={`${style.button} ${active === 0 ? style.active : ""}`} onClick={() => setActive(0)}>
+				<Home />
+			</div>
+			<div className={`${style.button} ${active === 1 ? style.active : ""}`} onClick={() => setActive(1)}>
+				<List />
+			</div>
+			<div className={`${style.button} ${active === 2 ? style.active : ""}`} onClick={() => setActive(2)}>
+				<Downloads />
+			</div>
+			<div className={`${style.button} ${active === 3 ? style.active : ""}`} onClick={() => setActive(3)}>
+				<Play />
+			</div>
 		</div>
 	);
 };
-
-Menu.propTypes = {
-	pages: PropTypes.array,
-};
-
-export default Menu;
