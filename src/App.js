@@ -2,13 +2,14 @@ import React from "react";
 import style from "./app.scss";
 import useNavigation from "./stores/navigation";
 
-import {Menu, ShowCard} from "./components";
+import {Menu, ShowCard, TopBar} from "./components";
 import {DownloadsPage} from "./components/Pages";
 
 const App = () => {
 	const {active} = useNavigation();
 	return (
 		<div>
+			<TopBar />
 			<Menu />
 			<div className={style.container}>
 				{active === 1 &&
