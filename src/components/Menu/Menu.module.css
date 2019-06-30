@@ -1,10 +1,11 @@
 .container {
 	position: fixed;
-	top: 0;
+	top: 2em;
 	height: 100%;
 	width: 70px;
 	background-color: #0e0e1b;
-	z-index: 3;
+	/* box-shadow: 0 0 1em #00000088; */
+	border-right: solid #948fff40 1px;
 }
 
 .button {
@@ -26,7 +27,7 @@
 }
 
 .active {
-	background-color: #1f1c3b;
+	background-color: #2D2647;
 	color: #fff;
 	fill: #fff;
 }
