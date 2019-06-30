@@ -1,0 +1,21 @@
+.bar {
+	height: 0.5em;
+	background-color: #0e0e1b;
+	text-align: left;
+	width: 300px;
+	border-radius: 1em;
+	border: solid #948fff 2px;
+	vertical-align: middle;
+	display: table-cell;
+}
+
+.progress {
+	background-color: #948fff;
+	height: 80%;
+	margin-left: 1px;
+	margin-top: 0;
+	margin-bottom: 0;
+	border-radius: 1em;
+	/* border: solid #0e0e1b 2px; */
+
+}
