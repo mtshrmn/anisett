@@ -13,17 +13,17 @@
 	height: 49px;
 	text-align: center;
 	padding: 15%;
+	color: #948fff;
+	fill: #948fff;
 }
 
 .pointer {
 	/* margin: 15%; */
 	height: 100%;
 	cursor: pointer;
-	color: #948fff;
-	fill: #948fff;
+	fill: inherit;
+	color: inherit;
 	background-color: inherit;
-
-
 }
 
 .active {
