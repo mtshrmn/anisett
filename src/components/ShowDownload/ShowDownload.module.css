@@ -1,0 +1,61 @@
+.container {
+	margin: 1em;
+	display: flex;
+	flex-direction: row;
+	color: #948fff;
+	border: solid #948fff 1px;
+	border-radius: 0.5em;
+}
+
+.thumbnail {
+	height: 150px;
+	width: 150px;
+	margin: 1em;
+	margin-right: 0.5em;
+}
+
+.info {
+	height: 150px;
+	width: 400px;
+	margin: 1em;
+	margin-left: 0.5em;
+	flex-direction: column;
+}
+
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 3.5em;
+	margin-top: 0.5em;
+}
+
+.title {
+	margin-left: 0;
+	margin-bottom: 0;
+	margin-top: auto;
+}
+
+.remaining {
+	margin-right: 0.4em;
+}
+
+.stats {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.speed {
+	margin-left: 0.4em
+}
+
+h2, h3, h4, h5 {
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
+	vertical-align: text-bottom;
+}
+/*
+* {
+	border: solid white 1px;
+} */
