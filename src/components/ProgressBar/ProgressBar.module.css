@@ -22,6 +22,7 @@
 	height: 80%;
 	margin: 1px;
 	border-radius: 1em;
+	max-width: calc(100% - 2px);
 }
 
 h5 {
