@@ -7,6 +7,7 @@ export const DownloadsPage = () => (
 			show={{
 				title: "Lorem Ipsum",
 				thumbnail: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx105333-pAyqB5RxQlsI.png",
+				episode: 5,
 			}}
 			downloadProgress={8}
 			upSpeed="420kbps"
