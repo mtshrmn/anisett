@@ -12,6 +12,7 @@
 	width: 150px;
 	margin: 1em;
 	margin-right: 0.5em;
+	cursor: pointer;
 }
 
 .info {
@@ -35,10 +36,12 @@
 	margin-left: 0;
 	margin-bottom: 0;
 	margin-top: auto;
+	cursor: pointer;
+	transition: color 0.3s;
 }
 
-.epsisode {
-	font-size: 1em;
+.title:hover {
+	color: #fff;
 }
 
 .btn {
@@ -49,6 +52,7 @@
 	border-radius: 0.5em;
 	cursor: pointer;
 	fill: #948fff;
+	transition: background 0.15s;
 }
 
 .btn:hover {
